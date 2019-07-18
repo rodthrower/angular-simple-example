@@ -1,0 +1,9 @@
+<button 
+    class="btn btn-primary"
+    (click)="toggleDisplayStatus()">Display Details
+  </button>
+
+ <p *ngIf="getDisplayStatus()==='on'" 
+    [ngClass]="{displayParagraph: getDisplayStatus() === 'on'}"
+ 
+ > Secret Password = tuna, displayStatus is {{ getDisplayStatus() }}</p>
